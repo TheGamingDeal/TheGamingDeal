@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheGamingDeal - Tous les produits</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+  <header>
+    <h1 id="site-title">TheGamingDeal</h1>
+    <p>Les meilleurs rabais Gaming et Électronique</p>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Voir tous les produits</a>
+    </nav>
+</header>
+
+<h3>Quel est ton Budget?</h3>
+<section class="filtrage">
+    <label for="prixMax">Prix maximum : <span id="prix-affiche">200</span> CAD</label>
+    <div class="slider-container">
+        <button id="moins">-</button>
+        <input type="range" id="prixMax" min="0" max="200" step="25" value="200">
+        <button id="plus">+</button>
+    </div>
+</section>
+
+
+<main>
+    <section class="produits-preview">
+        <h2>Tous les produits</h2>
+        <div id="liste-produits"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 TheGaminDeal. Tous droits réservés.</p>
+    <p>Ce site contient des liens affiliés Amazon.</p>
+</footer>
+
+<script src="data/produits.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/particules.js"></script>
+
+</body>
+</html>
